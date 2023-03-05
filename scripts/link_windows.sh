@@ -8,7 +8,7 @@ JAVA_HOME="./jdks/windows/jdk-18"
 
 # Build in dist/windows
 rm -rf dist/windows
-jlink \
+$JAVA_HOME/bin/jlink \
   --module-path $JAVA_HOME/jmods \
   --add-modules java.base,java.compiler,java.logging,java.sql,java.xml,jdk.compiler,jdk.jdi,jdk.unsupported,jdk.zipfs \
   --output dist/windows \
